@@ -117,6 +117,28 @@ body {
     gap: 10px;
     padding: 0 20px;
 }
+
+/* 下拉框样式 */
+.query-mode {
+    padding: 10px 5px;
+    border: 2px solid #1874CD;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.query-mode:hover {
+    border-color: #3a8bcd;
+}
+
+.query-mode:focus {
+    border-color: #3a8bcd;
+    box-shadow: 0 0 0 2px rgba(24, 116, 205, 0.2);
+}
+
 /* 搜索框样式 */
 .search-input {
     flex: 1;

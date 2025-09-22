@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./rsc/icon/logo_blueVer_1024.png">
     <link rel="stylesheet" href="web.css" />
     <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="logo-container"></div>
+        <div class="logo-container">
+            <img src="rsc/icon/logo_128.png" alt="Logo" class="logo">
+        </div>
         <h1 class="main-title">GenoNexus</h1>
         <ul class="nav-menu">
         <li class="nav-item"><a href="#" class="nav-link">菜单1</a></li>
@@ -20,7 +23,7 @@
     <!-- 内容 -->
     </div>
     <div class="search-container">
-        <input type="text" id="geneSearch" class="search-input">
+        <input type="text" id="geneSearch" class="search-input" placeholder="请输入基因名称">
         <button id="searchButton" class="search-button">搜索</button>
     </div>
 </body>

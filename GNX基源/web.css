@@ -21,8 +21,7 @@ body {
 /* Logo位置样式 */
 .logo-container {
     width: 120px; /* Logo宽度 */
-    height: 60px; /* Logo高度 */
-    background-color: rgba(255, 255, 255, 0.2); /* 半透明白色作为占位指示 */
+    height: 120px; /* Logo高度 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,6 +130,14 @@ body {
     border-color: #0a5cad;
     outline: none;
     box-shadow: 0 0 0 2px rgba(24, 116, 205, 0.2);
+}
+
+
+.search-input::placeholder {
+    color: #999; 
+    font-size: 16px; 
+    font-style: italic; 
+    opacity: 0.8; 
 }
 
 /* 搜索按钮样式 */

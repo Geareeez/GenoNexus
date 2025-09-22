@@ -3,26 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // 获取搜索框元素
     const searchInput = document.getElementById('geneSearch');
     
-    // 存储默认提示文字
-    const defaultText = '请输入基因名称';
-    
-    // 设置初始值
-    searchInput.value = defaultText;
-    
-    // 点击搜索框时清除默认文字
-    searchInput.addEventListener('focus', function() {
-        if (this.value === defaultText) {
-            this.value = '';
-        }
-    });
-    
-    // 离开搜索框时如果为空则恢复默认文字
-    searchInput.addEventListener('blur', function() {
-        if (this.value.trim() === '') {
-            this.value = defaultText;
-        }
-    });
-    
     // 可选：添加搜索按钮点击事件
     const searchButton = document.getElementById('searchButton');
     searchButton.addEventListener('click', function() {

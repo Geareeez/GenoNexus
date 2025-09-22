@@ -119,3 +119,53 @@ navItems.forEach((item) => {
     });
   });
 });
+// 导航栏交互逻辑
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取导航元素
+    const mainNavItem = document.getElementById('compoundAnalysis');
+    const subNav = document.getElementById('compoundSubNav');
+    const arrow = mainNavItem.querySelector('.arrow');
+    const subNavItems = document.querySelectorAll('.sub-nav-item');
+    const queryTypeSelect = document.getElementById('queryType');
+    
+    // 主导航点击事件 - 展开/折叠子导航
+    mainNavItem.addEventListener('click', function() {
+        subNav.classList.toggle('active');
+        arrow.classList.toggle('rotate');
+    });
+    
+    // 子导航项点击事件 - 切换查询类型
+    subNavItems.forEach(item => {
+        if (!item.classList.contains('placeholder')) {
+            item.addEventListener('click', function() {
+                const type = this.getAttribute('data-type');
+                // 更新下拉框选中状态
+                queryTypeSelect.value = type;
+                // 更新搜索框提示文字
+                updateSearchPlaceholder(type);
+            });
+        }
+    });
+    
+    // 下拉框变化时更新搜索框提示
+    queryTypeSelect.addEventListener('change', function() {
+        updateSearchPlaceholder(this.value);
+    });
+    
+    // 更新搜索框占位符文本
+    function updateSearchPlaceholder(type) {
+        const searchInput = document.getElementById('geneSearch');
+        switch(type) {
+            case 'cell':
+                searchInput.placeholder = "请输入细胞名称";
+                break;
+            case 'gene':
+                searchInput.placeholder = "请输入基因名称";
+                break;
+            case 'compound':
+                searchInput.placeholder = "请输入化合物名称";
+                break;
+        }
+    }
+});
+    

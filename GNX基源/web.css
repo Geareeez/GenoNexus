@@ -1,176 +1,176 @@
 /* 基础样式保持不变 */
 body {
-    font-family: Arial, sans-serif;
-    max-width: 1200px; /* 适当加宽以容纳导航 */
-    margin: 0 auto;
-    padding: 0; /* 移除默认内边距，避免影响标题栏宽度 */
-    line-height: 1.6;
-    color: #34495e;
+  font-family: Arial, sans-serif;
+  max-width: 1200px; /* 适当加宽以容纳导航 */
+  margin: 0 auto;
+  padding: 0; /* 移除默认内边距，避免影响标题栏宽度 */
+  line-height: 1.6;
+  color: #34495e;
 }
 
 /* 标题栏样式 */
 .header {
-    background-color: #1874CD;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
+  background-color: #1874cd;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
 }
 
 /* Logo位置样式 */
 .logo-container {
-    width: 120px; /* Logo宽度 */
-    height: 60px; /* Logo高度 */
-    background-color: rgba(255, 255, 255, 0.2); /* 半透明白色作为占位指示 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 4px;
+  width: 120px; /* Logo宽度 */
+  height: 60px; /* Logo高度 */
+  background-color: rgba(255, 255, 255, 0.2); /* 半透明白色作为占位指示 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
 /* 主标题样式 */
 .main-title {
-    margin: 0;
-    font-size: 1.8rem;
-    text-align: left;
-    color: white;
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: left;
+  color: white;
 }
 
 /* 下拉菜单样式 */
 .dropdown-menu {
-    position: absolute;
-    top: 100%; /* 位于导航项正下方 */
-    left: 0;
-    min-width: 150px;
-    background-color: white;
-    list-style: none;
-    margin: 0;
-    padding: 10px 0;
-    border-radius: 4px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* 确保菜单在其他内容上方 */
-    
-    /* 初始状态 */
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s, transform 0.3s;
+  position: absolute;
+  top: 100%; /* 位于导航项正下方 */
+  left: 0;
+  min-width: 150px;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* 确保菜单在其他内容上方 */
+
+  /* 初始状态 */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 /* 下拉菜单项样式 */
 .dropdown-menu .dropdown-link {
-    display: block;
-    padding: 8px 15px;
-    color: #34495e; /* 使用主文本色 */
-    text-decoration: none;
-    transition: background-color 0.2s;
+  display: block;
+  padding: 8px 15px;
+  color: #34495e; /* 使用主文本色 */
+  text-decoration: none;
+  transition: background-color 0.2s;
 }
 
 /* 下拉菜单项 hover 效果 */
 .dropdown-menu .dropdown-link:hover {
-    background-color: #f0f7ff; /* 浅蓝色背景 */
-    color: #1874CD; /* 主色调 */
+  background-color: #f0f7ff; /* 浅蓝色背景 */
+  color: #1874cd; /* 主色调 */
 }
 
 /* 确保导航项有足够空间容纳下拉菜单 */
 .nav-item {
-    position: relative;
-    margin-left: 25px;
-    padding: 5px 0; /* 增加点击区域 */
+  position: relative;
+  margin-left: 25px;
+  padding: 5px 0; /* 增加点击区域 */
 }
 /* 导航菜单样式 */
 .nav-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
-    position: relative;
-    margin-left: 25px;
+  position: relative;
+  margin-left: 25px;
 }
 
 .nav-link {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 0;
-    display: block;
-    transition: opacity 0.3s;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0;
+  display: block;
+  transition: opacity 0.3s;
 }
 
 .nav-link:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* 内容区域样式 */
 .content {
-    padding: 20px;
+  padding: 20px;
 }
 /* 搜索区域样式 */
 .search-container {
-    max-width: 600px;
-    margin: 180px auto;
-    display: flex;
-    gap: 10px;
-    padding: 0 20px;
+  max-width: 600px;
+  margin: 180px auto;
+  display: flex;
+  gap: 10px;
+  padding: 0 20px;
 }
 
 /* 下拉框样式 */
 .query-mode {
-    padding: 10px 5px;
-    border: 2px solid #1874CD;
-    border-radius: 4px;
-    background-color: white;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    transition: border-color 0.3s;
+  padding: 10px 5px;
+  border: 2px solid #1874cd;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s;
 }
 
 .query-mode:hover {
-    border-color: #3a8bcd;
+  border-color: #3a8bcd;
 }
 
 .query-mode:focus {
-    border-color: #3a8bcd;
-    box-shadow: 0 0 0 2px rgba(24, 116, 205, 0.2);
+  border-color: #3a8bcd;
+  box-shadow: 0 0 0 2px rgba(24, 116, 205, 0.2);
 }
 
 /* 搜索框样式 */
 .search-input {
-    flex: 1;
-    padding: 10px 15px;
-    border: 2px solid #1874CD;
-    border-radius: 4px;
-    font-size: 20px;
-    transition: border-color 0.3s;
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #1874cd;
+  border-radius: 4px;
+  font-size: 20px;
+  transition: border-color 0.3s;
 }
 
 .search-input:focus {
-    border-color: #0a5cad;
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(24, 116, 205, 0.2);
+  border-color: #0a5cad;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(24, 116, 205, 0.2);
 }
 
 /* 搜索按钮样式 */
 .search-button {
-    padding: 10px 20px;
-    background-color: #1874CD;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  background-color: #1874cd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .search-button:hover {
-    background-color: #0a5cad;
+  background-color: #0a5cad;
 }
 
 .search-button:active {
-    background-color: #08498a;
+  background-color: #08498a;
 }
